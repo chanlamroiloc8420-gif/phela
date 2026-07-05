@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Phê La Coffee — Trải nghiệm cà phê Việt Nam đích thực. Hương vị thượng hạng từ những hạt cà phê chọn lọc, rang xay thủ công theo phương pháp truyền thống.">
+  <meta name="keywords" content="cà phê, coffee, Phê La, cà phê Việt Nam, cà phê phin, dịch vụ cà phê">
+  <title>Phê La Coffee — Tinh Hoa Cà Phê Việt</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- Page Loader -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-content">
+      <div class="loader-coffee">☕</div>
+      <div class="loader-text">Phê La Coffee</div>
+    </div>
+  </div>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container">
+      <a href="#" class="logo">
+        <div class="logo-icon">☕</div>
+        <span class="logo-text">Phê La</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="active">Trang chủ</a>
+        <a href="#about">Về chúng tôi</a>
+        <a href="#menu">Thực đơn</a>
+        <a href="#gallery">Bộ sưu tập</a>
+        <a href="#contact">Liên hệ</a>
+        <a href="#contact" class="nav-cta">Đặt bàn →</a>
+      </nav>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <img src="images/hero-coffee.jpg" alt="Phê La Coffee — cà phê Việt Nam thượng hạng" loading="eager">
+    </div>
+    <div class="hero-overlay"></div>
+
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          Thương hiệu cà phê Việt
+        </div>
+        <h1 class="hero-title">
+          Tinh hoa<br>
+          <span class="highlight">Cà Phê Việt</span><br>
+          trong từng giọt
+        </h1>
+        <p class="hero-subtitle">
+          Khám phá hương vị cà phê đích thực được chọn lọc từ những vùng đất cao nguyên, rang xay thủ công và pha chế bằng cả tâm huyết.
+        </p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn-primary">Khám phá thực đơn →</a>
+          <a href="#about" class="btn-secondary">Câu chuyện của chúng tôi</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <span>Cuộn xuống</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Stats Bar -->
+  <section class="stats-bar">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal">
+          <div class="stat-number" data-count="15">0</div>
+          <div class="stat-label">Năm kinh nghiệm</div>
+        </div>
+        <div class="stat-item reveal delay-1">
+          <div class="stat-number" data-count="50">0</div>
+          <div class="stat-label">Loại cà phê</div>
+        </div>
+        <div class="stat-item reveal delay-2">
+          <div class="stat-number" data-count="30">0</div>
+          <div class="stat-label">Cửa hàng</div>
+        </div>
+        <div class="stat-item reveal delay-3">
+          <div class="stat-number" data-count="10000">0</div>
+          <div class="stat-label">Khách hàng hài lòng</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about section-padding" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image reveal-left">
+          <img src="images/cafe-interior.jpg" alt="Không gian Phê La Coffee" loading="lazy">
+          <div class="about-image-badge">
+            <div class="badge-icon">🏆</div>
+            <div class="badge-text">
+              <strong>Top 10</strong>
+              <span>Thương hiệu cà phê Việt</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content reveal-right">
+          <span class="section-label">Về chúng tôi</span>
+          <h2 class="section-title">Hành trình tìm kiếm<br>hương vị hoàn hảo</h2>
+          <p class="section-desc">
+            Phê La Coffee ra đời từ niềm đam mê với cà phê Việt Nam. Chúng tôi tin rằng mỗi tách cà phê là một tác phẩm nghệ thuật, được tạo nên từ sự kết hợp giữa truyền thống và đổi mới.
+          </p>
+
+          <div class="about-features">
+            <div class="about-feature">
+              <div class="feature-icon">🌱</div>
+              <div class="feature-text">
+                <h4>Nguồn gốc tự nhiên</h4>
+                <p>Hạt cà phê Arabica & Robusta chọn lọc từ Đắk Lắk, Lâm Đồng — vùng đất cao nguyên với khí hậu lý tưởng.</p>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="feature-icon">🔥</div>
+              <div class="feature-text">
+                <h4>Rang xay thủ công</h4>
+                <p>Quy trình rang xay tỉ mỉ theo từng mẻ nhỏ, giữ trọn hương vị đậm đà tự nhiên của hạt cà phê.</p>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="feature-icon">💎</div>
+              <div class="feature-text">
+                <h4>Trải nghiệm cao cấp</h4>
+                <p>Không gian thiết kế tinh tế, dịch vụ chuyên nghiệp — nơi lý tưởng để thưởng thức và kết nối.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section class="menu section-padding" id="menu">
+    <div class="container">
+      <div class="menu-header reveal">
+        <span class="section-label">Thực đơn</span>
+        <h2 class="section-title">Đặc sản cà phê Phê La</h2>
+        <p class="section-desc">Bộ sưu tập những tách cà phê được yêu thích nhất, pha chế từ nguyên liệu thượng hạng.</p>
+      </div>
+
+      <div class="menu-tabs reveal">
+        <button class="menu-tab active" data-filter="all">Tất cả</button>
+        <button class="menu-tab" data-filter="hot">Cà phê nóng</button>
+        <button class="menu-tab" data-filter="cold">Cà phê lạnh</button>
+        <button class="menu-tab" data-filter="special">Đặc biệt</button>
+        <button class="menu-tab" data-filter="tea">Trà & Khác</button>
+      </div>
+
+      <div class="menu-grid">
+        <!-- Card 1 -->
+        <div class="menu-card reveal delay-1" data-category="hot">
+          <div class="menu-card-image">
+            <img src="images/coffee-latte.jpg" alt="Cà phê sữa phin truyền thống" loading="lazy">
+            <span class="menu-card-tag">Bán chạy</span>
+            <button class="menu-card-favorite" aria-label="Yêu thích">♡</button>
+          </div>
+          <div class="menu-card-body">
+            <span class="menu-card-category">Cà phê nóng</span>
+            <h3 class="menu-card-title">Phin Sữa Truyền Thống</h3>
+            <p class="menu-card-desc">Cà phê phin đậm đà hòa quyện cùng sữa đặc béo ngậy, hương vị Việt Nam cổ điển.</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price">39K<span class="currency">đ</span></span>
+              <button class="menu-card-btn" aria-label="Thêm vào giỏ">+</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="menu-card reveal delay-2" data-category="cold">
+          <div class="menu-card-image">
+            <img src="images/coffee-iced.jpg" alt="Bạc xỉu đá" loading="lazy">
+            <button class="menu-card-favorite" aria-label="Yêu thích">♡</button>
+          </div>
+          <div class="menu-card-body">
+            <span class="menu-card-category">Cà phê lạnh</span>
+            <h3 class="menu-card-title">Bạc Xỉu Đá</h3>
+            <p class="menu-card-desc">Cà phê nhẹ nhàng với nhiều sữa, thêm đá mát lạnh — thức uống hoàn hảo cho ngày nắng.</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price">45K<span class="currency">đ</span></span>
+              <button class="menu-card-btn" aria-label="Thêm vào giỏ">+</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="menu-card reveal delay-3" data-category="special">
+          <div class="menu-card-image">
+            <img src="images/coffee-egg.jpg" alt="Cà phê trứng Hà Nội" loading="lazy">
+            <span class="menu-card-tag">Đặc biệt</span>
+            <button class="menu-card-favorite" aria-label="Yêu thích">♡</button>
+          </div>
+          <div class="menu-card-body">
+            <span class="menu-card-category">Đặc biệt</span>
+            <h3 class="menu-card-title">Cà Phê Trứng Hà Nội</h3>
+            <p class="menu-card-desc">Lớp kem trứng béo ngậy phủ trên cà phê đen đậm đà — di sản ẩm thực Hà Nội.</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price">55K<span class="currency">đ</span></span>
+              <button class="menu-card-btn" aria-label="Thêm vào giỏ">+</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="menu-card reveal delay-1" data-category="cold">
+          <div class="menu-card-image">
+            <img src="images/coffee-iced.jpg" alt="Cold Brew Original" loading="lazy">
+            <button class="menu-card-favorite" aria-label="Yêu thích">♡</button>
+          </div>
+          <div class="menu-card-body">
+            <span class="menu-card-category">Cà phê lạnh</span>
+            <h3 class="menu-card-title">Cold Brew Nguyên Bản</h3>
+            <p class="menu-card-desc">Cà phê ủ lạnh 18 giờ, hương vị thanh mát tự nhiên với nốt trái cây và chocolate nhẹ.</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price">49K<span class="currency">đ</span></span>
+              <button class="menu-card-btn" aria-label="Thêm vào giỏ">+</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="menu-card reveal delay-2" data-category="hot">
+          <div class="menu-card-image">
+            <img src="images/coffee-latte.jpg" alt="Cappuccino Phê La" loading="lazy">
+            <button class="menu-card-favorite" aria-label="Yêu thích">♡</button>
+          </div>
+          <div class="menu-card-body">
+            <span class="menu-card-category">Cà phê nóng</span>
+            <h3 class="menu-card-title">Cappuccino Phê La</h3>
+            <p class="menu-card-desc">Espresso đậm đà hòa cùng bọt sữa mịn tơi, trang trí latte art tinh tế.</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price">55K<span class="currency">đ</span></span>
+              <button class="menu-card-btn" aria-label="Thêm vào giỏ">+</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="menu-card reveal delay-3" data-category="special tea">
+          <div class="menu-card-image">
+            <img src="images/coffee-egg.jpg" alt="Trà sen Phê La" loading="lazy">
+            <span class="menu-card-tag">Mới</span>
+            <button class="menu-card-favorite" aria-label="Yêu thích">♡</button>
+          </div>
+          <div class="menu-card-body">
+            <span class="menu-card-category">Trà đặc biệt</span>
+            <h3 class="menu-card-title">Trà Sen Phê La</h3>
+            <p class="menu-card-desc">Trà ướp hương sen Tây Hồ, kết hợp với hạt sen bùi béo — thức uống thanh tao.</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price">45K<span class="currency">đ</span></span>
+              <button class="menu-card-btn" aria-label="Thêm vào giỏ">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Specialty Section -->
+  <section class="specialty section-padding" id="specialty">
+    <div class="container">
+      <div class="specialty-grid">
+        <div class="specialty-image reveal-left">
+          <img src="images/coffee-beans.jpg" alt="Hạt cà phê rang xay Phê La" loading="lazy">
+        </div>
+
+        <div class="specialty-content reveal-right">
+          <span class="section-label">Điều đặc biệt</span>
+          <h2 class="section-title section-title--light">Tại sao chọn<br>Phê La Coffee?</h2>
+          <p class="section-desc section-desc--light">
+            Chúng tôi không chỉ bán cà phê — chúng tôi mang đến một trải nghiệm hoàn chỉnh từ hạt đến ly.
+          </p>
+
+          <div class="specialty-list">
+            <div class="specialty-item">
+              <div class="specialty-num">01</div>
+              <div class="specialty-item-text">
+                <h4>Hạt cà phê 100% nguyên chất</h4>
+                <p>Cam kết không pha trộn tạp chất, không hương liệu nhân tạo. Chỉ có hạt cà phê thuần khiết.</p>
+              </div>
+            </div>
+            <div class="specialty-item">
+              <div class="specialty-num">02</div>
+              <div class="specialty-item-text">
+                <h4>Rang xay mỗi ngày</h4>
+                <p>Hạt cà phê được rang xay hàng ngày để đảm bảo độ tươi và hương vị đỉnh cao nhất.</p>
+              </div>
+            </div>
+            <div class="specialty-item">
+              <div class="specialty-num">03</div>
+              <div class="specialty-item-text">
+                <h4>Barista chuyên nghiệp</h4>
+                <p>Đội ngũ barista được đào tạo bài bản, pha chế mỗi ly cà phê như một tác phẩm nghệ thuật.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials section-padding" id="testimonials">
+    <div class="container">
+      <div class="testimonials-header reveal">
+        <span class="section-label">Đánh giá</span>
+        <h2 class="section-title">Khách hàng nói gì về chúng tôi</h2>
+        <p class="section-desc">Hàng ngàn khách hàng tin tưởng và yêu thích Phê La Coffee mỗi ngày.</p>
+      </div>
+
+      <div class="testimonials-slider reveal">
+        <div class="testimonials-track" id="testimonialsTrack">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card">
+            <div class="testimonial-quote">"</div>
+            <p class="testimonial-text">Cà phê phin ở Phê La thực sự khác biệt. Hương vị đậm đà, thơm lừng — cảm giác như được quay về tuổi thơ bên ly cà phê của bà.</p>
+            <div class="testimonial-stars">★★★★★</div>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">MT</div>
+              <div class="testimonial-info">
+                <strong>Minh Tuấn</strong>
+                <span>Khách hàng thân thiết</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card">
+            <div class="testimonial-quote">"</div>
+            <p class="testimonial-text">Không gian quán rất đẹp và yên tĩnh, lý tưởng để làm việc. Cà phê trứng ở đây là ngon nhất mà tôi từng thử!</p>
+            <div class="testimonial-stars">★★★★★</div>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">TL</div>
+              <div class="testimonial-info">
+                <strong>Thùy Linh</strong>
+                <span>Food Blogger</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card">
+            <div class="testimonial-quote">"</div>
+            <p class="testimonial-text">Tôi đã thử hơn 50 quán cà phê ở Sài Gòn, và Phê La luôn trong top 3. Cold brew ở đây rất smooth và thanh.</p>
+            <div class="testimonial-stars">★★★★★</div>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">ĐH</div>
+              <div class="testimonial-info">
+                <strong>Đức Hoàng</strong>
+                <span>Coffee Enthusiast</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 4 -->
+          <div class="testimonial-card">
+            <div class="testimonial-quote">"</div>
+            <p class="testimonial-text">Nhân viên rất thân thiện và am hiểu về cà phê. Mỗi lần tới đều được tư vấn những loại cà phê mới rất thú vị.</p>
+            <div class="testimonial-stars">★★★★★</div>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">HN</div>
+              <div class="testimonial-info">
+                <strong>Hồng Nhung</strong>
+                <span>Khách hàng VIP</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 5 -->
+          <div class="testimonial-card">
+            <div class="testimonial-quote">"</div>
+            <p class="testimonial-text">Phê La là nơi tôi luôn chọn để họp khách hàng. Không gian chuyên nghiệp, cà phê chất lượng và dịch vụ tuyệt vời.</p>
+            <div class="testimonial-stars">★★★★★</div>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">VP</div>
+              <div class="testimonial-info">
+                <strong>Việt Phong</strong>
+                <span>Doanh nhân</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonials-nav">
+        <button id="prevTestimonial" aria-label="Đánh giá trước">←</button>
+        <button id="nextTestimonial" aria-label="Đánh giá tiếp">→</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery section-padding" id="gallery">
+    <div class="container">
+      <div class="gallery-header reveal">
+        <span class="section-label">Bộ sưu tập</span>
+        <h2 class="section-title">Khoảnh khắc tại Phê La</h2>
+        <p class="section-desc">Những hình ảnh đẹp nhất từ không gian và sản phẩm của chúng tôi.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item reveal-scale">
+          <img src="images/cafe-interior.jpg" alt="Không gian quán Phê La Coffee" loading="lazy">
+          <div class="gallery-item-overlay">
+            <span>Không gian quán</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal-scale delay-1">
+          <img src="images/coffee-latte.jpg" alt="Latte Art tại Phê La" loading="lazy">
+          <div class="gallery-item-overlay">
+            <span>Latte Art</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal-scale delay-2">
+          <img src="images/coffee-egg.jpg" alt="Cà phê trứng Phê La" loading="lazy">
+          <div class="gallery-item-overlay">
+            <span>Cà phê trứng</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal-scale delay-3">
+          <img src="images/coffee-beans.jpg" alt="Hạt cà phê rang xay" loading="lazy">
+          <div class="gallery-item-overlay">
+            <span>Hạt cà phê</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal-scale delay-4">
+          <img src="images/coffee-iced.jpg" alt="Cà phê đá tại Phê La" loading="lazy">
+          <div class="gallery-item-overlay">
+            <span>Cà phê đá</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta section-padding">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label" style="text-align:center; display:block;">Sẵn sàng chưa?</span>
+        <h2 class="section-title section-title--light">
+          Hãy đến và trải nghiệm<br>
+          <span class="text-accent">hương vị Phê La</span>
+        </h2>
+        <p class="section-desc section-desc--light">
+          Đặt bàn ngay hôm nay hoặc ghé thăm cửa hàng gần nhất để thưởng thức tách cà phê tuyệt vời nhất.
+        </p>
+        <div class="cta-actions">
+          <a href="#contact" class="btn-primary">Đặt bàn ngay →</a>
+          <a href="#menu" class="btn-secondary">Xem thực đơn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact section-padding" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <span class="section-label">Liên hệ</span>
+          <h2 class="section-title">Kết nối với<br>Phê La Coffee</h2>
+          <p class="section-desc">
+            Có câu hỏi, đề xuất hay muốn đặt bàn? Hãy liên hệ với chúng tôi — luôn sẵn sàng phục vụ bạn.
+          </p>
+
+          <div class="contact-details">
+            <div class="contact-detail">
+              <div class="contact-detail-icon">📍</div>
+              <div class="contact-detail-text">
+                <h4>Địa chỉ</h4>
+                <p>123 Nguyễn Huệ, Quận 1<br>TP. Hồ Chí Minh, Việt Nam</p>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">📞</div>
+              <div class="contact-detail-text">
+                <h4>Điện thoại</h4>
+                <p>+84 28 1234 5678<br>+84 909 123 456</p>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">✉️</div>
+              <div class="contact-detail-text">
+                <h4>Email</h4>
+                <p>hello@phelacoffee.vn<br>booking@phelacoffee.vn</p>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">🕐</div>
+              <div class="contact-detail-text">
+                <h4>Giờ mở cửa</h4>
+                <p>Thứ 2 – Chủ nhật: 7:00 – 22:00<br>Phục vụ tất cả các ngày lễ</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form reveal-right">
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fullName">Họ và tên</label>
+                <input type="text" id="fullName" placeholder="Nguyễn Văn A" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Số điện thoại</label>
+                <input type="tel" id="phone" placeholder="0909 123 456" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="email@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Chủ đề</label>
+              <select id="subject">
+                <option value="" disabled selected>Chọn chủ đề</option>
+                <option value="booking">Đặt bàn</option>
+                <option value="event">Tổ chức sự kiện</option>
+                <option value="franchise">Nhượng quyền</option>
+                <option value="feedback">Góp ý</option>
+                <option value="other">Khác</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Lời nhắn</label>
+              <textarea id="message" placeholder="Viết lời nhắn của bạn tại đây..."></textarea>
+            </div>
+            <button type="submit" class="form-submit">Gửi tin nhắn →</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <div class="logo-icon">☕</div>
+            <span class="logo-text">Phê La</span>
+          </a>
+          <p>Phê La Coffee — nơi mỗi tách cà phê kể một câu chuyện. Chúng tôi cam kết mang đến trải nghiệm cà phê Việt Nam đích thực nhất.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook">𝕗</a>
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="TikTok">♪</a>
+            <a href="#" aria-label="YouTube">▶</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Điều hướng</h4>
+          <ul>
+            <li><a href="#home">Trang chủ</a></li>
+            <li><a href="#about">Về chúng tôi</a></li>
+            <li><a href="#menu">Thực đơn</a></li>
+            <li><a href="#gallery">Bộ sưu tập</a></li>
+            <li><a href="#contact">Liên hệ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Dịch vụ</h4>
+          <ul>
+            <li><a href="#">Đặt bàn</a></li>
+            <li><a href="#">Sự kiện</a></li>
+            <li><a href="#">Nhượng quyền</a></li>
+            <li><a href="#">Cà phê giao tận nơi</a></li>
+            <li><a href="#">Cà phê hạt</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column footer-newsletter">
+          <h4>Bản tin</h4>
+          <p>Đăng ký nhận tin khuyến mãi và các loại cà phê mới nhất từ Phê La.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" placeholder="Email của bạn" required>
+            <button type="submit">Gửi</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2024 Phê La Coffee. Tất cả quyền được bảo lưu.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Chính sách bảo mật</a>
+          <a href="#">Điều khoản sử dụng</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Về đầu trang">↑</button>
+
+  <script src="index.js"></script>
+</body>
+</html>
