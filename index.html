@@ -38,11 +38,17 @@
         <a href="#contact" class="nav-cta">Đặt bàn →</a>
       </nav>
 
-      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <div class="header-actions">
+        <button class="cart-toggle" id="cartToggle" aria-label="Giỏ hàng">
+          <span class="cart-icon">🛒</span>
+          <span class="cart-badge" id="cartBadge">0</span>
+        </button>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </div>
   </header>
 
@@ -621,6 +627,174 @@
 
   <!-- Back to Top -->
   <button class="back-to-top" id="backToTop" aria-label="Về đầu trang">↑</button>
+
+  <!-- Cart Sidebar -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3>🛒 Giỏ hàng <span class="cart-count" id="cartCount">(0)</span></h3>
+      <button class="cart-close" id="cartClose" aria-label="Đóng giỏ hàng">✕</button>
+    </div>
+
+    <div class="cart-body" id="cartBody">
+      <div class="cart-empty" id="cartEmpty">
+        <div class="cart-empty-icon">🛒</div>
+        <p>Giỏ hàng trống</p>
+        <span>Hãy thêm sản phẩm yêu thích của bạn!</span>
+        <a href="#menu" class="btn-primary cart-shop-btn" id="cartShopBtn">Xem thực đơn →</a>
+      </div>
+      <div class="cart-items" id="cartItems"></div>
+    </div>
+
+    <div class="cart-footer" id="cartFooter" style="display:none;">
+      <div class="cart-summary">
+        <div class="cart-summary-row">
+          <span>Tạm tính</span>
+          <span id="cartSubtotal">0đ</span>
+        </div>
+        <div class="cart-summary-row">
+          <span>Phí giao hàng</span>
+          <span id="cartShipping">Miễn phí</span>
+        </div>
+        <div class="cart-summary-row cart-total">
+          <strong>Tổng cộng</strong>
+          <strong id="cartTotal">0đ</strong>
+        </div>
+      </div>
+      <button class="btn-checkout" id="btnCheckout">Thanh toán →</button>
+      <button class="btn-continue" id="btnContinue">← Tiếp tục mua sắm</button>
+    </div>
+  </aside>
+
+  <!-- Checkout Modal -->
+  <div class="checkout-overlay" id="checkoutOverlay"></div>
+  <div class="checkout-modal" id="checkoutModal">
+    <button class="checkout-close" id="checkoutClose" aria-label="Đóng">✕</button>
+
+    <!-- Step Indicator -->
+    <div class="checkout-steps">
+      <div class="checkout-step active" data-step="1">
+        <div class="step-circle">1</div>
+        <span>Thông tin</span>
+      </div>
+      <div class="step-line"></div>
+      <div class="checkout-step" data-step="2">
+        <div class="step-circle">2</div>
+        <span>Thanh toán</span>
+      </div>
+      <div class="step-line"></div>
+      <div class="checkout-step" data-step="3">
+        <div class="step-circle">3</div>
+        <span>Hoàn tất</span>
+      </div>
+    </div>
+
+    <!-- Step 1: Customer Info -->
+    <div class="checkout-panel active" id="checkoutStep1">
+      <h3>Thông tin giao hàng</h3>
+      <form id="checkoutForm1">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="ckName">Họ và tên *</label>
+            <input type="text" id="ckName" placeholder="Nguyễn Văn A" required>
+          </div>
+          <div class="form-group">
+            <label for="ckPhone">Số điện thoại *</label>
+            <input type="tel" id="ckPhone" placeholder="0389 989 943" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="ckEmail">Email</label>
+          <input type="email" id="ckEmail" placeholder="email@example.com">
+        </div>
+        <div class="form-group">
+          <label for="ckAddress">Địa chỉ giao hàng *</label>
+          <input type="text" id="ckAddress" placeholder="Số nhà, tên đường, quận/huyện..." required>
+        </div>
+        <div class="form-group">
+          <label for="ckNote">Ghi chú</label>
+          <textarea id="ckNote" placeholder="Ví dụ: ít đường, thêm đá..."></textarea>
+        </div>
+        <button type="submit" class="btn-checkout">Tiếp tục →</button>
+      </form>
+    </div>
+
+    <!-- Step 2: Payment -->
+    <div class="checkout-panel" id="checkoutStep2">
+      <h3>Phương thức thanh toán</h3>
+      <div class="payment-methods">
+        <label class="payment-option active">
+          <input type="radio" name="payment" value="cod" checked>
+          <div class="payment-card">
+            <span class="payment-icon">💵</span>
+            <div>
+              <strong>Thanh toán khi nhận hàng (COD)</strong>
+              <p>Trả tiền mặt khi nhận sản phẩm</p>
+            </div>
+          </div>
+        </label>
+        <label class="payment-option">
+          <input type="radio" name="payment" value="banking">
+          <div class="payment-card">
+            <span class="payment-icon">🏦</span>
+            <div>
+              <strong>Chuyển khoản ngân hàng</strong>
+              <p>Chuyển khoản trước khi giao hàng</p>
+            </div>
+          </div>
+        </label>
+        <label class="payment-option">
+          <input type="radio" name="payment" value="momo">
+          <div class="payment-card">
+            <span class="payment-icon">📱</span>
+            <div>
+              <strong>Ví MoMo</strong>
+              <p>Thanh toán qua ví điện tử MoMo</p>
+            </div>
+          </div>
+        </label>
+      </div>
+
+      <!-- Order Summary -->
+      <div class="checkout-order-summary">
+        <h4>Đơn hàng của bạn</h4>
+        <div id="checkoutItems"></div>
+        <div class="checkout-total-row">
+          <strong>Tổng thanh toán</strong>
+          <strong id="checkoutTotal" class="text-accent">0đ</strong>
+        </div>
+      </div>
+
+      <div class="checkout-actions">
+        <button class="btn-back" id="btnBackStep1">← Quay lại</button>
+        <button class="btn-checkout" id="btnConfirmOrder">Xác nhận đặt hàng</button>
+      </div>
+    </div>
+
+    <!-- Step 3: Success -->
+    <div class="checkout-panel" id="checkoutStep3">
+      <div class="checkout-success">
+        <div class="success-icon">🎉</div>
+        <h3>Đặt hàng thành công!</h3>
+        <p>Mã đơn hàng: <strong id="orderCode">#PL00001</strong></p>
+        <p>Cảm ơn bạn đã đặt hàng tại Phê La Coffee. Chúng tôi sẽ liên hệ xác nhận trong ít phút.</p>
+        <div class="success-details">
+          <div class="success-detail">
+            <span>📞</span>
+            <p>Hotline: <strong>0389 989 943</strong></p>
+          </div>
+          <div class="success-detail">
+            <span>⏱️</span>
+            <p>Thời gian giao: <strong>15-30 phút</strong></p>
+          </div>
+        </div>
+        <button class="btn-checkout" id="btnBackHome">Về trang chủ ←</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-container" id="toastContainer"></div>
 
   <script src="index.js"></script>
 </body>
